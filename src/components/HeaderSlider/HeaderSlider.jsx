@@ -6,7 +6,7 @@ export default function HeaderSlider({ sliderImages }) {
   let [sliderImage, setSliderImage] = useState(sliderImages[slider]);
 
   let increment = () => {
-    setSliderImage(sliderImages[slider]);
+    setSliderImage(sliderImages[slider + 1]);
 
     if (sliderImages.length - 1 == slider) {
       setSlider(0);
@@ -16,7 +16,7 @@ export default function HeaderSlider({ sliderImages }) {
   };
 
   let decrement = () => {
-    setSliderImage(sliderImages[slider]);
+    setSliderImage(sliderImages[slider - 1]);
 
     if (slider == 0) {
       setSlider(sliderImages.length - 1);
@@ -26,10 +26,14 @@ export default function HeaderSlider({ sliderImages }) {
   };
 
   return (
-    <>
-      <button onClick={decrement}></button>
+    <div className="sliderContainer">
+      <button className="sliderButton leftButton" onClick={decrement}>
+        <img className="buttonIcon" src="./logo/left-chevron.png" alt="Left icon png" />
+      </button>
       <img src={sliderImage} alt="Slider Image" />
-      <button onClick={increment}></button>
-    </>
+      <button className="sliderButton rightButton" onClick={increment}>
+        <img className="buttonIcon " src="./logo/right-chevron.png" alt="Right icon png" />
+      </button>
+    </div>
   );
 }
