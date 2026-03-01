@@ -1,24 +1,29 @@
-.sliderContainer{
-    position: relative;
+.sliderContainer {
+  position: relative;
 }
 
-.buttonIcon{
-    width: 60px;
-    height: 60px;
+.buttonIcon {
+  width: 60px;
+  height: 60px;
 }
 
-.sliderButton{
-    border: none;
-    background-color: rgba(0, 0, 0, 0.03);
-    position: absolute;
-height: 100%;
+.sliderButton {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.03);
+  position: absolute;
+  height: 100%;
 }
 
-.leftButton{
-top: 0px;
+.leftButton {
+  top: 0px;
 }
 
-.rightButton{
-    bottom: 0px;
-    right: 0px;
+.rightButton {
+  bottom: 0px;
+  right: 0px;
+}
+
+.sliderImage {
+  max-width: 100%;
 }

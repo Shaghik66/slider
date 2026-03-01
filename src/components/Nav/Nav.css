@@ -2,17 +2,34 @@ nav {
   display: flex;
   justify-content: center;
   min-height: 60px;
-  background-color: blue;
+  background-color: rgb(35, 35, 204);
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
 }
 
 .navLogo {
+  max-width: 25%;
   height: 50px;
+  align-self: center;
 }
 
 .navInputContainer {
   position: relative;
+  align-self: center;
+}
+
+.navTelNumContainer {
+  display: flex;
+  gap: 10px;
+  align-self: center;
+ 
+}
+
+.navTelNum{
+ color: white;
+  font-weight: 500;
+ text-decoration: none;
+ font-size: 20px;
 }
 
 .telLogo {
@@ -20,13 +37,23 @@ nav {
   height: 20px;
 }
 
-.searchLogo{
+.searchLogo {
   position: absolute;
+  top: 2px;
   right: 10px;
   width: 20px;
 }
 
-.logo{
-  width: 20px;
-  height: 20px;
+.logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.navInput {
+  padding: 4px 30px 4px 10px;
+}
+
+.navLogosContainer{
+  align-self: center;
 }
