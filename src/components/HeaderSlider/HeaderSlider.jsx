@@ -8,21 +8,13 @@ export default function HeaderSlider({ sliderImages }) {
   let increment = () => {
     setSliderImage(sliderImages[slider]);
 
-    if (sliderImages.length - 1 == slider) {
-      setSlider(0);
-    } else {
-      setSlider(slider + 1);
-    }
+    sliderImages.length - 1 == slider ? setSlider(0) : setSlider(slider + 1);
   };
 
   let decrement = () => {
     setSliderImage(sliderImages[slider]);
 
-    if (slider == 0) {
-      setSlider(sliderImages.length - 1);
-    } else {
-      setSlider(slider - 1);
-    }
+    slider == 0 ? setSlider(sliderImages.length - 1) : setSlider(slider - 1);
   };
 
   return (
